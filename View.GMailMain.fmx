@@ -1,0 +1,62 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 484
+  ClientWidth = 297
+  Padding.Left = 14.000000000000000000
+  Padding.Top = 14.000000000000000000
+  Padding.Right = 14.000000000000000000
+  Padding.Bottom = 14.000000000000000000
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object btnSend: TButton
+    Align = Top
+    Position.X = 14.000000000000000000
+    Position.Y = 14.000000000000000000
+    Size.Width = 269.000000000000000000
+    Size.Height = 43.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = 'Send Email'
+    OnClick = btnSendClick
+  end
+  object Memo1: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    ReadOnly = True
+    ShowScrollBars = False
+    TextSettings.WordWrap = True
+    Align = Bottom
+    Position.X = 14.000000000000000000
+    Position.Y = 304.000000000000000000
+    Size.Width = 269.000000000000000000
+    Size.Height = 166.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Viewport.Width = 265.000000000000000000
+    Viewport.Height = 162.000000000000000000
+  end
+  object btnTest1: TButton
+    Align = Top
+    Margins.Top = 16.000000000000000000
+    Position.X = 14.000000000000000000
+    Position.Y = 73.000000000000000000
+    Size.Width = 269.000000000000000000
+    Size.Height = 43.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Text = 'Test 1'
+    OnClick = btnTest1Click
+  end
+  object ActionList1: TActionList
+    Left = 104
+    Top = 128
+    object ShowShareSheetAction1: TShowShareSheetAction
+      Category = 'Media Library'
+    end
+  end
+end
