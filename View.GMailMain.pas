@@ -41,7 +41,7 @@ uses
 
 procedure TForm2.btnSendClick(Sender: TObject);
 begin
-  if TEmailUtils.Send('chrispimlott@googlemail.com', 'chris@mybuzztech.co.uk', 'Test email', 'Hi Chris,'+sLineBreak+'This is a test email!', [fAttachmentFilename]) then
+  if TEmailUtils.Send('test@test.com', 'test@test.com', 'Test email', 'Hi Chris,'+sLineBreak+'This is a test email!', [fAttachmentFilename]) then
     Memo1.Lines.Add('Sent successfully')
   else
     Memo1.Lines.Add('Not sent');
@@ -63,20 +63,6 @@ begin
   finally
     bmp.Free;
   end;
-
-//  i:=TJPermissionChecker.JavaClass.checkSelfPermission(TAndroidHelper.Context, StringToJString(fAttachmentFilename));
-//  b:=TJPrintHelper.JavaClass.systemSupportsPrint;
-//
-//  i:=TJNotificationManagerCompat.JavaClass.IMPORTANCE_HIGH;
-//
-//  nm:=TJNotificationManagerCompat.JavaClass.from(TAndroidHelper.Context);
-//  if nm <> nil then
-//  begin
-//    if (nm.areNotificationsEnabled()) then
-//      ShowMessage('Notifications are on!')
-//    else
-//      ShowMessage('Notifications are off!');
-//  end;
 end;
 
 procedure TForm2.CreateTestFile;
